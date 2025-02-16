@@ -1,15 +1,13 @@
-import React from 'react';
-
 const publications = [
   {
     title: "Malvika - Annual University Magazine",
     description: "The 55th edition of our prestigious annual university magazine, featuring comprehensive coverage of university events, student achievements, and academic excellence.",
-    image: "/malvika-cover.jpg"
+    image: "src/assets/malvika.jpg" 
   },
   {
     title: "Tiresia - Literary Magazine",
     description: "Volume 15, Issue 3 of our literary magazine showcasing creative writing, poetry, and artistic expressions from our talented community.",
-    image: "/tiresia-cover.jpg"
+    image: "src/assets/tiresia.jpg" 
   }
 ];
 

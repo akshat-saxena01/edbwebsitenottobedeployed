@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { ChevronDown } from 'lucide-react';
 
@@ -8,7 +7,7 @@ const Hero = () => {
       <div className="text-center">
         <div className="flex justify-center mb-8">
           <img 
-            src="/editorial-board-logo.png" 
+            src="src\assets\edbLogo.png" 
             alt="The Editorial Board Logo" 
             className="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48"
           />

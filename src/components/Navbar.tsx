@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import { Hexagon, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +18,14 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <Hexagon className="h-8 w-8 text-amber-400" />
-            <span className="text-xl font-bold text-amber-400">OrgName</span>
+            <img
+            src="src\assets\mmmut.png" 
+            alt="MMMUT Logo"
+              className="h-8 w-8 md:h-10 md:w-10 object-contain"
+            />
           </Link>
-          
+
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
@@ -58,9 +62,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <div className="py-4 space-y-4">
             {navItems.map((item) => (
