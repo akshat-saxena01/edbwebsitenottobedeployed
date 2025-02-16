@@ -17,11 +17,8 @@ const Hero = () => {
         </h1>
         <div className="relative">
           <p className="text-xl md:text-2xl text-gray-600 font-alba tracking-wide">
-            Beckoning Creat'wit'y
+            -Beckoning Creat'wit'y
           </p>
-          <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 text-2xl text-amber-400">
-            -
-          </span>
         </div>
         
         <ScrollLink 
